@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E3E3E3;
+}
+
+p {
+    font-family: "Inter", serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.card {
+    max-width: 684px;
+    max-height: 840px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.header {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .title {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 38.73px;
+    }
+
+    .subTitle {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.94px;
+        color: #7B7B7B;
+    }
+}
+
+.taskForm {
+    width: 100%;
+    display: flex;
+    gap: 11px;
+    display: flex;
+
+    .taskInput {
+        height: 10px;
+        width: 500px;
+        height: 63px;
+        border: 1px solid;
+        border-color: #DEDEDE;
+        border-radius: 8px;
+        display: flex;
+        justify-items: left;
+        align-items: center;
+        padding-left: 32px;
+    }
+
+    .textBox::placeholder {
+        font-size: 14px;
+        color: #7B7B7B;
+        font-weight: 500;
+    }
+    
+    .addButton {
+        width: 66px;
+        height: 63px;
+        background-color: #5016FF;
+        border-radius: 8px;
+        border: 0px;
+        cursor: pointer;
+    }
+    
+    .addText {
+        font-size: 32px;
+        color: white;
+    }
+}
+
+.taskList {
+    display: flex;
+    height: 576px;
+    background-color: #EEEEF0;
+    border-radius: 8px;
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .task {
+        height: 59px;
+        width: 530px;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 4px;
+
+        .taskInfo {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            .checklist {
+                height: 27px;
+                width: 27px;
+                border: 1px solid;
+                border-color: #DEDEDE;
+                background-color: #FFFFFF;
+                cursor: pointer;
+                background-image: url("Assets/Completed.png");
+                background-size: 100% 100%;
+                background-position: center;
+                border-radius: 4px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            .checklist.completed {
+                background-color: #5016FF;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 14px;
+            }
+        }
+
+        button {
+            height: 12px;
+            width: 12px;
+            border: 0px;
+            background-color: white;
+            background-image: url("Assets/CloseTask.png");
+            background-size: 100% 100%;
+            background-position: center;
+            cursor: pointer;
+        }
+    }
+}
